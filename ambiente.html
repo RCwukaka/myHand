@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="GBK">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>设置</title>
+<link rel="stylesheet" href="./css/jqm.css">
+<link href="./css/myself.css" rel="stylesheet">
+<script src="./jq/jquery-1.3.js"></script>
+<script src="./jq/jquery-1.4.2.js"></script>
+<script src="./jq/jquery-1.4.4.js"></script>
+<script src="./jq/jq.js"></script>
+<script src="./jq/jqm.js"></script>
+<script src="./jq/roomsetting.js" charset="GBK"></script>
+</head>
+<style type="text/css">
+.tapreflectafter {
+	background-color: #f5f5f5;
+}
+</style>
+<body>
+	<!---------------------网页头部 ----------------->
+
+	<div data-role="page" id="index" data-dom-cache="false" data-theme="a">
+		<div data-role="header" data-theme="a">
+			<a data-role="button" href="amb_set.html" data-inline="true"
+				data-theme="a" data-corners="true" data-shadow="true"
+				data-iconshadow="true" data-wrapperels="span" rel="external"
+				class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-icon-left"><span
+				class="ui-btn-inner"><span class="ui-btn-text">Back</span><span
+					class="ui-icon ui-icon-arrow-l ui-icon-shadow">&nbsp;</span></span></a>
+			<h2>Room</h2>
+			<a data-role="button" data-icon="plus" rel="external"
+				data-inline="true" data-theme="a" onclick="urlTurn()"
+				data-corners="true" data-shadow="true" data-iconshadow="true"
+				data-wrapperels="span"
+				class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-icon-left"
+				style="float: right"><span class="ui-btn-inner"><span 
+					class="ui-btn-text" >Transmitters</span><span
+					class="ui-icon ui-icon-search ui-icon-shadow">&nbsp;</span></span></a>
+		</div>
+		<!-------------网页内容  -------------->
+		<div data-role="content">
+					<img  data-theme="a" src="./images/ic-no.png"
+						id="room_Icon"> 
+						<label for="Roomname">Room Name</label> 
+						<input data-role="text" id="Roomname">						
+<a data-role="button" data-theme="a" data-corners="true"
+						href="#dialog" data-rel="dialog">Select Icon</a>
+
+
+					<!-----------------------------------------------------------
+-------------------------------------------------------------------
+--------------------- ajax发送room信息  room.icon&&room.name ---------
+-------------------------------------------------------------------
+----------------------------------------------------------------->
+					<div data-role="button" data-theme="a" data-corners="true"
+						id="send" onclick="changeonsavebut()">Save Room</div>
+				</div>				
+		<!---------------网页页脚  -->
+		<div data-role="footer" data-position="fixed">		
+		</div>
+	</div>
+
+
+
+
+	<!-- 设置房间的图标弹出对话框 -->
+	<div data-role="page" id="dialog" data-theme="a">
+		<div data-role="header">
+			<h1>请选择图标</h1>
+		</div>
+
+		<!-- 待修改 -->
+
+		<div data-role="content">
+			<div class="ui-grid-b">
+				<div class="ui-block-a">
+					<img src="./images/ic-ba.png" class="roomIcon">
+				</div>
+				<div class="ui-block-b">
+					<img src="./images/ic-b-n.png" class="roomIcon">
+				</div>
+				<div class="ui-block-c">
+					<img src="./images/ic-cam.png" class="roomIcon">
+				</div>
+				<div class="ui-block-a">
+					<img src="./images/ic-cam-m.png" class="roomIcon">
+				</div>
+				<div class="ui-block-b">
+					<img src="./images/ic-cam-t.png" class="roomIcon">
+				</div>
+			</div>
+		</div>
+
+		<a href="#index" data-role="button" id="sure">确定</a>
+	</div>
+</body>
+</html>

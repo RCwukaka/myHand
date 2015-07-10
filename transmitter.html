@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="GBK">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>设置</title>
+<link rel="stylesheet" href="./css/jqm.css">
+<script src="./jq/jquery-1.3.js"></script>
+<script src="./jq/jquery-1.4.2.js"></script>
+<script src="./jq/jquery-1.4.4.js"></script>
+<script src="./jq/jq.js"></script>
+<script src="./jq/jqm.js"></script>
+<link href="./css/mobiscroll.custom-2.5.0.min.css" rel="stylesheet" />
+<script src="./jq/mobiscroll.custom-2.5.0.min.js"></script>
+<script  src="./jq/transmitter.js" charset="GBK"></script>
+<style type="text/css">
+.tapreflectafter {
+	background-color: #f5f5f5;
+}
+</style>
+</head>
+<body>
+	<!---------------------网页头部 ----------------->
+
+	<div data-role="page" id="pagemain" data-theme="a">
+		<div data-role="header" data-theme="a">
+			<a data-role="button"  data-inline="true" onclick="back()"
+				data-theme="a" data-corners="true" data-shadow="true"
+				data-iconshadow="true" data-wrapperels="span" rel="external"
+				class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-icon-left"><span
+				class="ui-btn-inner"><span class="ui-btn-text" >Back</span><span
+					class="ui-icon ui-icon-arrow-l ui-icon-shadow">&nbsp;</span></span></a>
+			<h2>Set Transmitter</h2>
+		</div>
+
+		<!-------------网页内容 遥控器选择   -------------->
+		<!-- 返回图片的路径 -->
+		<div data-role="content">
+					<img src="./images/tc_6.png" id="transmitterIcon"> <label
+						for="TransmitterName">Name</label><input type="text"
+						data-role="text" id="TransmitterName" name="TransmitterName">
+					<a href="#dialogTransmitter" data-role="button" data-theme="a"
+						data-rel="dialog">Select Icon</a>
+					<button data-role="button" data-theme="a" onclick="changeable()">Save Transmitter</button>
+				</div>
+
+				<!-------------------------- 遥控器通道选择 ------------------------->
+
+
+
+				<!--------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------ajax发送transmitter.name&&transmitter.icon&&transmitter.time ---------
+--------------------------------------------------------------------------
+----------------------------------------------------------------->
+					<label for="scroller" style="font-size: 22px">SetTime</label><input
+		         id="scroller" name="scroller" placeholder="时间..." />
+		         					
+
+		<!---------------网页页脚  -->
+		<div data-role="footer" data-position="fixed">
+		</div>
+
+	</div>
+	<!-- 遥控器图标选择 -->
+	<div data-role="page" id="dialogTransmitter" data-theme="a">
+		<div data-role="header">
+			<h1>请选择图标</h1>
+		</div>
+
+		<!-----------------------------------------------------------------------------------------
+---------------------用js些图标选择 用js将对话框中的时间存储在一个变量中再用ajax传到后台-----------------
+--------------------------------------------------------------------------------------->
+
+		<div data-role="content">
+			<div class="ui-grid-b" id="imageSrc">
+				<div class="ui-block-a">
+					<img src="./images/tc_6.png" class="transmitterIcon">
+				</div>
+				<div class="ui-block-b">
+					<img src="./images/tc_7.png" class="transmitterIcon">
+				</div>
+				<div class="ui-block-c">
+					<img src="./images/tc_8.png" class="transmitterIcon">
+				</div>
+				<div class="ui-block-a">
+					<img src="./images/tc_9.png" class="transmitterIcon">
+				</div>
+				<div class="ui-block-b">
+					<img src="./images/tc_10.png" class="transmitterIcon">
+				</div>
+				<div class="ui-block-c">
+					<img src="./images/tc_11.png" class="transmitterIcon">
+				</div>
+				<div class="ui-block-a">
+					<img src="./images/tc_12.png" class="transmitterIcon">
+				</div>
+				<div class="ui-block-b">
+					<img src="./images/tc_13.png" class="transmitterIcon">
+				</div>
+				<div class="ui-block-c">
+					<img src="./images/tc_14.png" class="transmitterIcon">
+				</div>
+			</div>
+		</div>
+
+		<a href="#pagemain" data-role="button" id="Iconsure">确定</a>
+	</div>
+</body>
+</html>

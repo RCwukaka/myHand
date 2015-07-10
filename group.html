@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="GBK">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>设置</title>
+<link rel="stylesheet" href="./css/jqm.css">
+<link href="./css/myself.css" rel="stylesheet">
+<script src="./jq/jquery-1.3.js"></script>
+<script src="./jq/jquery-1.4.2.js"></script>
+<script src="./jq/jquery-1.4.4.js"></script>
+<script src="./jq/jq.js"></script>
+<script src="./jq/jqm.js"></script>
+<script src="./jq/groupshow.js" charset="GBK"></script>
+</head>
+<body style="overflow:hidden">
+	
+	<!---------------------网页头部 ----------------->
+	<div data-role="page" id="pageone" data-theme="a" >
+		<div data-role="header" data-theme="a">	
+				<a data-role="button" href="index.html" data-inline="true" data-theme="a"
+					data-corners="true" data-shadow="true" data-iconshadow="true"
+					data-wrapperels="span" rel="external"
+					class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-icon-left"><span
+					class="ui-btn-inner"><span class="ui-btn-text">Back</span><span
+						class="ui-icon ui-icon-arrow-l ui-icon-shadow">&nbsp;</span></span></a>	
+			<h2>Group</h2>
+		</div>
+ 
+		<!-------------网页内容-------------->
+		<div data-role="content">
+		<ul data-role="listview" data-theme="a" id="grouplist">
+			
+		</ul>
+		</div>
+
+		<!---------------网页页脚  -->
+		<div data-role="footer" data-position="fixed">
+		</div>
+	</div> 
+	<div data-role="page" id="dialog" data-theme="a">
+		<div data-role="header">
+			<h1>Set</h1>
+		</div>
+
+		<div data-role="content">
+			<label>Set minute to start lately</label>
+			<input type='range'  data-highlight='true' value='0'min='0'max='20' id="time"/>
+			<a data-role="button" onclick="send()">start</a>
+		</div>
+	</div>
+	<a data-role="button" id="turn" href="#dialog" data-rel="dialog" style="display:none"></a>			
+</body>
+</html>

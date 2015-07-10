@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="GBK">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>设置</title>
+<link rel="stylesheet" href="./css/jqm.css">
+<link href="./css/myself.css" rel="stylesheet"></link>
+<script src="./jq/jquery-1.3.js"></script>
+<script src="./jq/jquery-1.4.2.js"></script>
+<script src="./jq/jquery-1.4.4.js"></script>
+<script src="./jq/jq.js"></script>
+<script src="./jq/jqm.js"></script>
+<script src="./jq/writepas.js" charset="GBK"></script>
+</head>
+
+<body>
+	<!---------------------网页头部 ----------------->
+
+	<div data-role="page" data-theme="a">
+		<div data-role="header">
+			<div>
+				<a data-role="button" href="setting.html" data-inline="true"
+					data-theme="a" data-corners="true" data-shadow="true"
+					data-iconshadow="true" data-wrapperels="span" rel="external"
+					class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-icon-left">
+					<span class="ui-btn-inner"> <span class="ui-btn-text">Back</span>
+						<span class="ui-icon ui-icon-arrow-l ui-icon-shadow">&nbsp;</span>
+				</span>
+				</a>
+			</div>
+		</div>
+
+
+
+		<!-------------网页内容-------------->
+		<div data-role="content">
+			<h4>Password length has to be between 4 and 7characters</h4>
+			<label for="password">Password</label> <input type="password"
+				id="password"
+				placeholder="Password length has to be between 4 and 7characters">
+			<label for="Confirm Password">Confirm Password</label> <input
+				type="password" id="ConfirmPassword">
+			<button type="button" value="Save Password" data-theme="a" id="Save"></button>
+			<button type="button" value="Remove Password" data-theme="a"
+				id="Remove"></button>
+		</div>
+
+
+		<!---------------网页页脚  -->
+		<div data-role="footer" data-position="fixed">
+		</div>
+	</div>
+</body>
+</html>

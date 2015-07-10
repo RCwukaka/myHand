@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="GBK">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>设置</title>
+<link rel="stylesheet" href="./css/jqm.css">
+<link href="./css/myself.css" rel="stylesheet">
+<script src="./jq/jquery-1.3.js"></script>
+<script src="./jq/jquery-1.4.2.js"></script>
+<script src="./jq/jquery-1.4.4.js"></script>
+<script src="./jq/jq.js"></script>
+<script src="./jq/jqm.js"></script>
+<script src="./jq/roominfo.js" charset="GBK"></script>
+</head>
+
+<body>
+	<!---------------------网页头部 ----------------->
+
+	<div data-role="page" id="pageone" class="body">
+		<div data-role="header" data-theme="a">
+				<a data-role="button"  data-icon="arrow-l" onclick="back()"
+				data-inline="true" data-theme="a" data-corners="true"
+				data-shadow="true" data-iconshadow="true" data-wrapperels="span"
+				class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-icon-left"><span
+				class="ui-btn-inner"><span class="ui-btn-text" >Back</span><span
+					class="ui-icon ui-icon-arrow-l ui-icon-shadow">&nbsp;</span></span></a>		
+			<h2></h2>
+		</div>
+
+		<!-------------网页内容-------------->
+		<div data-role="content" >
+		<ul data-role="listview" id="info"  data-theme="a">
+		<li data-role="list-divider" data-theme="a" id="transInfo">设备</li>
+		</ul>
+		</div>
+
+
+		<!---------------网页页脚  -->
+		<div data-role="footer" data-position="fixed" id="showsimple">
+		</div>
+	</div>
+</body>
+</html>

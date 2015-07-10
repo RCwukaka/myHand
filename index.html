@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="GBK">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>设置</title>
+<link rel="stylesheet" href="./css/jqm.css">
+<link href="./css/myself.css" rel="stylesheet">
+<script src="./jq/jquery-1.3.js"></script>
+<script src="./jq/jquery-1.4.2.js"></script>
+<script src="./jq/jquery-1.4.4.js"></script>
+<script src="./jq/jq.js"></script>
+<script src="./jq/jqm.js"></script>
+<script src="./jq/room.js" charset="GBK"></script>
+</head>
+
+<body style="overflow:hidden">
+	
+	<!---------------------网页头部 ----------------->
+	<div data-role="page" id="pageone" data-theme="a" >
+		<div data-role="header" data-theme="a">		
+			<h2>Room</h2>
+		</div>
+ 
+		<!-------------网页内容-------------->
+		<div data-role="content" >
+			<ul data-role="listview"  id="roomlist">
+			</ul>
+		</div>
+
+		<!---------------网页页脚  -->
+		<div data-role="footer" data-position="fixed" id="showsimple">
+						<div data-role="navbar">
+				<ul style="list-style-type: none" data-icon="none" id="foot" >
+					<!--------------      页脚导航链接           ---------------->
+					<li><a href="group.html" rel="external"><img alt="信息" src="./images/ic-info.png" ></a></li>
+					<li><a href="#" rel="external"><img alt="信息" src="./images/ic-info.png" ></a></li>
+					<li><a id="state" onclick="setbutton()"><img alt="启动/停止" src="./images/ic-man.png"></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" id="setting">
+		<div data-role="navbar">
+		      <ul style="list-style-type: none" data-icon="none">
+		          <li><a href="setting.html" rel="external"><img
+							alt="设置" src="./images/ic_s.png" ></a></li>
+					</ul>
+		</div>
+		</div>
+		
+	</div>
+</body>
+</html>

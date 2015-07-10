@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="GBK">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>设置</title>
+<link rel="stylesheet" href="./css/jqm.css" />
+<link href="./css/myself.css" rel="stylesheet">
+<script src="./jq/jquery-1.3.js"></script>
+<script src="./jq/jquery-1.4.2.js"></script>
+<script src="./jq/jquery-1.4.4.js"></script>
+<script src="./jq/jq.js"></script>
+<script src="./jq/jqm.js"></script>
+<script src="./jq/trans_group.js"></script>
+</head>
+
+<body>
+	<!---------------------网页头部 ----------------->
+	<div data-role="page" data-theme="a">
+		<div data-role="header" >
+			<div>
+				<a data-role="button" data-inline="true" data-theme="a"
+					data-corners="true" data-shadow="true" data-iconshadow="true"
+					data-wrapperels="span" rel="external" onclick="back()"
+					class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-icon-left"><span
+					class="ui-btn-inner"><span class="ui-btn-text">Back</span><span
+						class="ui-icon ui-icon-arrow-l ui-icon-shadow">&nbsp;</span></span>
+						</a>
+			</div>
+		</div>
+
+		<!-------------网页内容-------------->
+		<div data-role="content">
+			<ul data-role="listview" data-theme="a" id="exit">
+			<li><a style='vertical-align: middle; line-height: 60px;' onclick="selectroom()"><img src='./images/ic-ba.png' style='width:50%' id="content">Select Room</a></li>
+			 <li data-role="list-divider" data-theme="a"  id="exit-divider">已加入</li>
+			  <li data-role="list-divider" data-theme="a"  id="no-exit-divider">未加入</li>
+			</ul>
+		</div>
+
+
+		<!---------------网页页脚  -->
+		<div data-role="footer" data-position="fixed"></div>
+		
+		<a data-role="button" id="turn" href="#dialogTransmitter" data-rel="dialog" style="display:none"></a>
+		<a data-role="button" id="turnRoom" href="#dialogRoom" data-rel="dialog" style="display:none"></a>		
+	</div>
+	
+	
+	<div data-role="page" id="dialogTransmitter" data-theme="a">
+		<div data-role="header">
+			<h1>Set Default</h1>
+		</div>
+
+		<div data-role="content">
+			
+		</div>
+
+		<a data-role="button" id="sure" onclick="addTransmitter()">Sure</a>
+	</div>
+	
+	
+	
+	<div data-role="page" id="dialogRoom" data-theme="a">
+		<div data-role="header">
+			<h1>Select Room</h1>
+		</div>
+
+		<div data-role="content">
+				<ul data-role="listview" data-theme="a" id="roomlist">
+				<!-- 房间的信息 -->
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
